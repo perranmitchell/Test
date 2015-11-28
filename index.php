@@ -2,7 +2,7 @@
 	mysql_connect("db.getcontrol.co","getcontrol","RX931QTTQ139XR");
 	mysql_select_db('getcontrol');
 	
-	$sql = "SELECT * FROM poll WHERE ipd = '".$_SERVER['REMOTE_ADDR']."'";
+	$sql = "SELECT * FROM poll WHERE ipx = '".$_SERVER['REMOTE_ADDR']."'";
 	$result = mysql_query($sql);
 	if(mysql_num_rows($result) > 0){
 		$poll_allowed = false;	
