@@ -1,0 +1,3 @@
+RewriteEngine On
+
+RewriteRule ^poll-results poll_results.php [QSA,L]
